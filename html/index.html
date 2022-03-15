@@ -1,5 +1,6 @@
 <!-- DOM - Document Object Model - HTML은 DOM이다-->
 <!-- DOM tree - Object가 가지처럼 들어가있는 형태-->
+<!-- alt + shift 영역복사 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -54,6 +55,13 @@
     <a href="tel:1234567890" target="_blank" rel="tel">전화</a>
     
     <hr>
+
+
+
+
+
+
+
 
     <!-- unordered list, ordered list -->
     <h3>과일리스트</h3>
@@ -112,9 +120,128 @@
         </tr>
     </table>
 
+    <hr>
 
+    <h3>인물 주소</h3>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th colspan="2">주소</th>
+        </tr>
+
+        <tr>
+            <td>재석</td>
+            <td>서울시</td>
+            <td>강남구</td>
+        </tr>
+        <tr>
+            <td>호동</td>
+            <td>부산시</td>
+            <td>해운대구</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>이름</th>
+            <td>재석</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <th>상세주소</th>
+            <td>강남구 압구정동</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>이름</th>
+            <td>재석</td>
+        </tr>
+        <tr>
+            <th rowspan="2">상세주소</th>
+            <td>서울시</td>
+        </tr>
+        <tr>
+            <!-- <th>상세주소</th> -->
+            <td>강남구 압구정동</td>
+        </tr>
+    </table>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+    <!-- Form 양식 -->
+    <!-- 서버와 교류하기 위한 수단 -->
+    <!-- Form method(HTTP Method) : GET, POST, PUT, DELETE -->
+    <!-- GET : 데이터가 주소창으로 전돨됨 - 브라우저 캐시 ex)검색, 게시글 가져오기-->
+    <!-- POST : 데이터가 내부적으로 전달됨 - 브라우저 히스토리에 남지않음(민감정보) - 로그인, 회원가입, CRUD-->
+    <!-- 서버로 데이터가 전달되기 위해서는 name이 필수적으로 포함되어야 함 -->
+    <h1>Google</h1>
+    <form action="./search.php" method="GET">
+
+    <!-- placeholder : 도움말 -->
+    <!-- input에서 여러가지 속성들이 백엔드로 전달될 때 분류됨 -->
+    <!-- label > input의 설명 -->
+        <input type="text" name="" id="" placeholder="검색어를 입력하세요">
+        <button>검색</button>
+    </form>
+
+    <hr>
+
+    <h1>로그인</h1>
+    <form action="./login.php" method="post">
+        <div>
+            <label for="">아이디</label>
+            <input type="text" name="userid" id="아이디를 입력하세요">
+        </div>
+        <div>
+            <label for="">비밀번호</label>
+            <input type="text" name="userpw" id="비밀번호를 입력하세요">
+        </div>
+        <div>
+            <input type="checkbox" name="autologin" id="">
+            <label for="autologin">자동로그인</label>
+        </div>
+        <div>
+            <button type="submit">로그인</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>블로그 작성하기</h1>
+    <form action="" method="get">
+        <div class="form-group">
+            <label for="">제목</label>
+            <input type="text" name="title" id="" placeholder="제목을 입력하세요">
+        </div>
+        <div class="form-group">
+            <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="">파일 업로드</label>
+            <!-- 여러개의 파일을 업로드할 때 multiple -->
+            <input type="file" name="myfile" multiple>
+        </div>
+        </div>
+        <div class="form-group">
+            <button type="submit">등록하기</button>
+        </div>
+    </form>
 </body>
 </html>
-
-
-
