@@ -1,3 +1,6 @@
+<!-- DOM - Document Object Model - HTML은 DOM이다-->
+<!-- DOM tree - Object가 가지처럼 들어가있는 형태-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +8,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- heading 제목 -->
     <h1>hello world!</h1>
+    <h2>hello world!</h2>
+    <h3>hello world!</h3>
+    <h4>hello world!</h4>
+    <h5>hello world!</h5>
+
+    <hr>
+
+    <!-- paragraph 문단 > 블록요소-->
+    <!-- span 문단  > 인라인요소 -->
+    <p>
+    <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestias! <br>
+    <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing. <br>
+    <b>Lorem</b> ipsum, dolor sit amet consectetur adipisicing elit. Quo accusantium tenetur cumque, non fuga corrupti consequuntur error earum beatae omnis!
+    <b>Lorem</b> ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, odit ut? <br>
+    <b>Lorem</b> ipsum dolor sit, amet consectetur adipisicing elit. Non culpa error maiores veritatis optio architecto fugiat eius, reiciendis itaque quisquam, tempore saepe. Nihil, eaque! Magnam, corporis quia necessitatibus similique, doloribus, fugiat sed error a nostrum ex obcaecati iste! Sed aliquam nam optio quaerat, at voluptatum quae quo vero, provident, tenetur officiis repellendus aperiam nulla maiores voluptas aspernatur quas. Amet consequatur hic facilis tempore fugiat quo nobis nihil consectetur? <br>
+
+        <span style="color: blue;">
+            <b>Lorem</b> Inventore unde esse iste temporibus vero harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit eos id deleniti porro, at consectetur. Unde. <br>
+            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i><br>
+        </span>
+    </p>
+
+    <hr>
+
+    <!-- a 링크 -->
+    <!-- href : 링크를 의미, 홈페이지 외에도 다른 기능 수행 가능 (전화,문자,이메일 등) -->
+    <!-- target : 링크된 문서를 클릭했을 때 문서가 열릴 위치를 명시함 (_blank, _self) -->
+    <!-- rel : 현재 문서와 링크된 문서 사이의 연관관계 -->
+    <h3>금융의 모든 것, 토스</h3>
+    <a href="http://toss.im" target="_blank" rel="dream">toss.im</a><br>
+    <a href="mailto:jswtncapetnc@gmail.com" target="_blank" rel="email">이메일</a><br>
+    <a href="tel:1234567890" target="_blank" rel="tel">전화</a>
+    
+    <hr>
+
+    <!-- unordered list, ordered list -->
+    <h3>과일리스트</h3>
+    <ul style="list-style-type: none;">
+        <li>사과</li>
+        <li>포도</li>
+        <li>멜론</li>
+        <li>딸기</li>
+        <li>키위</li>
+    </ul>
+    
+    <h3>알파벳 순서</h3>
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ol>
+
+    <hr>
+    <!-- Data list -->
+    <!-- Data title -->
+    <!-- Data description -->
+    <!-- 데이터의 계층 관계를 명시적으로 표현하기 위해 활용 -->
+    <h3>나라별 수도</h3>
+    <dl>
+        <dt>서울</dt>
+        <dd>한국의 수도</dd>
+    
+        <dt>도쿄</dt>
+        <dd>일본의 수도</dd>
+    </dl>
+
+    <hr>
+
+    <!-- Table 표, 엑셀 -->
+    <!-- Table row -->
+    <!-- Table head -->
+    <h3>인물 정보</h3>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>연락처</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>재석</td>
+            <td>02</td>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <td>호동</td>
+            <td>03</td>
+            <td>부산</td>
+        </tr>
+    </table>
+
+
 </body>
 </html>
 
-<!-- DOM - Document Object Model - HTML은 DOM이다-->
-<!-- DOM tree - Object가 가지처럼 들어가있는 형태-->
+
+
