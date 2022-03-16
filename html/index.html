@@ -1,6 +1,7 @@
 <!-- DOM - Document Object Model - HTML은 DOM이다-->
 <!-- DOM tree - Object가 가지처럼 들어가있는 형태-->
 <!-- alt + shift 영역복사 -->
+<!--  alt 방향키 이동 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -243,5 +244,145 @@
             <button type="submit">등록하기</button>
         </div>
     </form>
+
+    <hr>
+
+    <h1>상품업로드</h1>
+    <form action="./upload.php" method="POST">
+
+        <div class="form-group">
+            <label for="상품명">상품명</label>
+            <input type="text" name="product_name" value="" id="" placeholder="상품명을 입력하세요">
+        </div>
+
+        <div class="form-group">
+            <label for="카테고리">카테고리</label>
+            <select name="category" id="">
+                <option value="outer">아우터</option>
+                <option value="upside">상의</option>
+                <option value="downside">하의</option>
+                <option value="accsesorry">악세사리</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="수량">수량</label>
+            <input type="number" name="number" placeholder="$">
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <label for="">상품 설명</label>
+            <textarea name="description" id="" cols="30" rows="10" placeholder="상품 설명을 입력하세요"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" name="save">저장</button>
+            <button type="submit" name="cancel">취소</button>
+        </div>
+
+    </form>
+
+    <hr>
+
+    <h1>숙박 예약</h1>
+    <form action="">
+        <div class="form-group">
+            <h3>체크인</h3>
+
+            <label for="체크인 날짜">날짜</label>
+            <input type="date" name="checkin_date" id="">
+
+            <label for="체크인 시간">시간</label>
+            <input type="time" name="checkin_time" id="">
+        </div>
+
+        <div class="form-group">
+            <h3>체크아웃</h3>
+
+            <label for="체크아웃 날짜">날짜</label>
+            <input type="date" name="checkout_date" id="">
+
+            <label for="체크아웃 시간">시간</label>
+            <input type="time" name="checkout_time" id="">
+        </div>
+        <br>
+        <!-- radio에서 input type name을 같게 할 경우, 복수선택이 안됨 -->
+        <div class="form-group">
+            <label for="성인 1명">성인 1명</label>
+            <input type="radio" name="member" id="" value="1adult">
+            
+            <label for="성인 2명">성인 2명</label>
+            <input type="radio" name="member" id="" value="2adult">
+            
+            <label for="성인 3명">성인 3명</label>
+            <input type="radio" name="member" id="" value="3adult">
+            
+            <label for="성인 4명">성인 4명</label>
+            <input type="radio" name="member" id="" value="4adult">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="">가격 범위</label>
+            <input type="range" name="range" id="" min="1$" max="100,000$">
+        </div>
+        <br>
+       
+        <div class="form-group">
+            <button type="submit" name="reservation">예약</button>
+            <button type="submit" name="cancel">취소</button>
+        </div>
+        <br>
+    </form>
+
+    <hr>
+    
+
+
+
+
+
+
+
+    <!-- HTML Reserved Words (HTML에서 사용된느 문자들) -->
+    <!-- UTF-8 인코딩 방식에서 특수문자가 깨지는 현상이 발생할 수 있기 때문에 사용함 -->
+    <!-- 엔티티 이름 : &으로 시작한다  > 특수문자를 대체하기 위해 사용-->
+    <!-- 엔티티 숫자 : &#으로 시작한다 > Symbol이나 Emoji를 사용하기 위해 사용-->
+    <h1>HTML Entity (HTML 엔티티)</h1>
+    <div class="entity-group">
+        <span>less than : </span>
+        <span>&lt;</span><br>
+
+        <span>greater than : </span>
+        <span>&gt;</span><br>
+
+        <span>quoation : </span>
+        <span>&quot;</span><br>
+
+        <span>apostrophe : </sapn>
+        <span>&apos;</span><br>
+
+        <span>ampersnad : </span>
+        <span>&amp;</span><br>
+
+        <span>white-space : </span>
+        <span>&nbsp;</span><br>
+
+        <span>ghost emoji : </span>
+        <span style="font-size: 48px;">👻</span><br>
+        
+        <span>happy emoji : </span>
+        <span style="font-size: 48px;">😀</span><br>
+        
+        <span>whale emoji : </span>
+        <span style="font-size: 48px;">&#128011;</span><br>
+        
+        <span>diamond emoji : </span>
+        <span style="font-size: 48px;">&#128142;</span><br>
+        
+        <span>yellow heart emoji : </span>
+        <span style="font-size: 48px;">&#128155;</span><br>
+    </div>
 </body>
 </html>
