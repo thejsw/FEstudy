@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Noto+Serif+Display:wght@500&family=Poppins:ital,wght@1,100&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: black;
+    }
+
+    #helloCSS {
+        color: rgb(245, 243, 243);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 48px;
+        margin-top: auto;
+        margin-bottom: 200px;
+    }
+    /* font 관련 css 선택자 */
+    .paragraph_red {
+        color: rgb(216, 135, 135);
+        font-size: 48px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+    }
+
+    .paragraph_blue {
+        color: rgb(32, 32, 116);
+        font-size: 48px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
+    
+    #paragraph_yellow {
+        color: #FAE100;
+        font-size: 48px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: lighter;
+    }
+    
+    #paragraph_mint {
+        color: rgb(0, 206, 178);
+        font-size: 48px;
+        font-family: 'League Spartan', sans-serif;
+        font-weight: normal;
+    }
+
+
+
+    
+
+
+
+
+    /* list 관련 css 선택자 */
+    /* css 자손 선택자 */
+    .ulli-group{
+        list-style-type: none;
+        color: white;
+        font-size: 24px;
+        font-family: 'Noto Serif Display', serif;
+        font-weight: 700;
+        padding: 0px;
+    }
+
+    .ulli-group li h3{
+        list-style-type: none;
+        color: rgb(112, 175, 212);
+        font-size: 60px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .ulli-group li p{
+        list-style-type: none;
+        color: rgb(112, 212, 162);
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .ulli-group > li {
+        font-size: 16px;;
+    }
+    
+    .ulli-group .licss {
+        font-size: 16px;
+        color: rgb(112, 212, 162);
+    }
+
+    .son {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+    /* css 자식 선택자 */
+    .son > li{
+        font-family: 'Poppins', sans-serif;
+        color: #FAE100;
+    }
+    
+    /* opacity 투명도 0-1 사이의 값을 가짐 */
+    .son > ol{
+        font-family: 'Poppins', sans-serif;
+        padding: 0px;
+        color: rgba(214, 184, 189, 0.5);
+    }
+    
+</style>
+
+
+
+
+
+
+
+
+
+<body>
+
+
+    <p id="helloCSS">Hello CSS!</p>
+
+    <!-- font 관련 css 선택자 -->
+    <div class="paragraph-group">
+        <p class="paragraph_red">Lorem ipsum dolor sit amet.</p>
+        <p class="paragraph_blue">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    
+        <p id="paragraph_yellow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse.</p>
+        <div id="paragraph_mint">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, distinctio tempora.</div>
+    </div>
+    
+    <!-- list 관련 css 선택자 -->
+    <!-- css 자손 선택자 -->
+    <div class="ulli-group">
+        <ul class="ulli-group">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVA SCRIPT</li>
+        </ul>
+        
+        <ul class="ulli-group">
+            <li>
+                <h3>techstack</h3>
+                <p>HTML</p>
+                <small>React</small>
+            </li>
+            <li class="ulli-group licss">CSS</li>
+            <li>JAVA SCRIPT</li>
+        </ul>
+        
+        <ul class="ulli-group">
+            <li>next.js</li>
+            <li>nest.js</li>
+            <li>redux.js</li>
+        </ul>
+
+        <ul class="son">
+            <li>next.js</li>
+            <li>nest.js</li>
+            <li>redux.js</li>
+            <ol>node.js</ol>
+        </ul>
+    </div>
+</body>
+</html>
