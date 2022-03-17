@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Hahmlet:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Hahmlet', serif;
+        text-align: center;
+    
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+    
+    button {
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+        background-color: #1b64da;;
+        color: #fff;
+        
+        display: inline;
+        margin: 0px 10px;
+        padding: 10px;
+        
+        font-size: 24px;
+        font-family: 'Black Han Sans', sans-serif;
+    }
+
+    button:hover {
+        background-color: #64a8ff;
+        color: #000;
+        transition-duration: 0.4s;
+    }
+
+    .box {
+        width: 500px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+
+        margin-top: 200px;
+        position: relative;
+    }
+
+    #X {
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        top: 0px;
+        right: 0px;
+        z-index: 1;
+
+        width: 26px;
+        height: 25px;
+        background-color: red;
+        border: #000;
+        font-size: 16px;
+    }
+
+    #X:hover { background-color: #ef9a9a; }
+
+    #nav {
+        position: absolute;
+        margin-top: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        top: 0px;
+        left: 0px;
+
+        width: 500px;
+        height: 25px;
+        background-color: red;
+        border: #000;
+
+    }
+    
+</style>
+
+<body>
+    <div class="box">
+        <h1>저장하시겠습니까?</h1>
+    
+        <div class="btn">
+            <button type="submit" name="save">저장</button>
+            <button type="submit" name="cancel">취소</button>
+        </div>
+
+        <button id="X" type="submit" name="cancel">X</button>
+        <div id="nav" name="navbar"></div>
+    </div>
+</body>
+</html>
