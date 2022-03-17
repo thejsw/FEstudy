@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Noto+Serif+Display:wght@500&family=Poppins:ital,wght@1,100&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 </head>
 
@@ -19,7 +20,21 @@
     }
 
     body {
-        background-color: black;
+        background-color: #000;
+        color: #fff;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 24px;
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .div {
+        padding: 10px;
     }
 
     #helloCSS {
@@ -123,6 +138,82 @@
         padding: 0px;
         color: rgba(255, 184, 92, 0.849);
     }
+
+    .p-box {
+        max-width: 300px;
+        min-height: 100px;
+        color: #fff;
+        border: 1px dashed white;
+        margin: 0px 300px;
+    }
+    
+    .font-box-serif {
+        text-align: center;
+        font-family: serif;
+        max-width: 300px;
+        min-height: 100px;
+        color: #fff;
+        border: 1px dashed white;
+        margin: 10px 300px;
+        padding-top: 10px;
+    }
+    
+    .font-box-Sansserif {
+        text-align: center;
+        font-family: 'Black Han Sans', sans-serif;
+        font-size: 24px;
+        max-width: 300px;
+        min-height: 100px;
+        color: #fff;
+        border: 1px dashed white;
+        margin: 10px 300px;
+        padding-top: 10px;
+    }
+    
+    .font-box-monospace {
+        text-align: center;
+        font-family: monospace;
+        max-width: 300px;
+        min-height: 100px;
+        color: #fff;
+        border: 1px dashed white;
+        margin: 10px 300px;
+        padding-top: 10px;
+    }
+    
+    .font-box-cursive {
+        text-align: center;
+        font-family: cursive;
+        max-width: 300px;
+        min-height: 100px;
+        color: #fff;
+        border: 1px dashed white;
+        margin: 10px 300px;
+        padding-top: 10px;
+    }
+    
+    .font-box-fantasy {
+        text-align: center;
+        font-family: fantasy;
+        max-width: 300px;
+        min-height: 100px;
+        color: #fff;
+        border: 1px dashed white;
+        margin: 10px 300px;
+        padding-top: 10px;
+    }
+    
+    .font-box-fantasy {
+        text-align: center;
+        font-family: fantasy;
+        max-width: 300px;
+        min-height: 100px;
+        color: #fff;
+        border: 1px dashed white;
+        margin: 10px 300px;
+        padding-top: 10px;
+    }
+
     
 </style>
 
@@ -179,6 +270,24 @@
             <li>redux.js</li>
             <ol>node.js</ol>
         </ul>
+    </div>
+
+       
+    <!-- /* 실무에서 max-width와 min-height가 많이 쓰임 */ -->
+    <h1 style="font-size: 48px;">width, height 크기</h1>
+    <div>
+        <div class="p-box">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et magnam quo facere, sequi est repellat quasi voluptatibus consequatur ipsum? Tempora reiciendis consequatur, sequi mollitia officiis libero rem laborum illo vel quod. Illum consequuntur nam rerum quidem natus incidunt earum? Debitis dolor eaque a architecto obcaecati doloribus vel, ab quidem nulla eum id sed quisquam aliquid tempora quas animi beatae eligendi officia! Vero alias obcaecati hic mollitia explicabo a, repellendus quaerat iusto aperiam eum maxime soluta! Eligendi, consequatur. Vero eaque necessitatibus beatae laborum ipsa itaque rerum natus mollitia qui ex dicta unde perspiciatis ab illo eveniet sapiente, error consectetur quis doloribus!
+        </div>
+    </div>
+    
+    <h1 style="font-size: 48px;">Font 폰트</h1>
+    <div>
+        <div class="font-box-serif">Lorem ipsum dolor sit amet.</div>
+        <div class="font-box-Sansserif">로렘 입숨 돌롤 싯 아멧</div>
+        <div class="font-box-monospace">Lorem ipsum dolor sit amet.</div>
+        <div class="font-box-cursive">Lorem ipsum dolor sit amet.</div>
+        <div class="font-box-fantasy">Lorem ipsum dolor sit amet.</div>
     </div>
 </body>
 </html>

@@ -12,6 +12,7 @@
 <style>
     body {
         background-color: #000;
+        color: #fff;
         margin: 0px;
         padding: 0px;
     }
@@ -26,6 +27,14 @@
     .div {
         padding: 10px;
     }
+
+
+
+
+
+
+
+
 
     .div-group1 {
         width: 100px;
@@ -56,81 +65,141 @@
         margin: 0px 300px;
     }
     
-    .p-box {
-        max-width: 300px;
-        min-height: 100px;
-        color: #fff;
-        border: 1px dashed white;
-        margin: 0px 300px;
-    }
-    
-    .font-box-serif {
-        text-align: center;
-        font-family: serif;
-        max-width: 300px;
-        min-height: 100px;
-        color: #fff;
-        border: 1px dashed white;
-        margin: 10px 300px;
-        padding-top: 10px;
-    }
-    
-    .font-box-Sansserif {
-        text-align: center;
-        font-family: 'Black Han Sans', sans-serif;
-        font-size: 24px;
-        max-width: 300px;
-        min-height: 100px;
-        color: #fff;
-        border: 1px dashed white;
-        margin: 10px 300px;
-        padding-top: 10px;
-    }
-    
-    .font-box-monospace {
-        text-align: center;
-        font-family: monospace;
-        max-width: 300px;
-        min-height: 100px;
-        color: #fff;
-        border: 1px dashed white;
-        margin: 10px 300px;
-        padding-top: 10px;
-    }
-    
-    .font-box-cursive {
-        text-align: center;
-        font-family: cursive;
-        max-width: 300px;
-        min-height: 100px;
-        color: #fff;
-        border: 1px dashed white;
-        margin: 10px 300px;
-        padding-top: 10px;
-    }
-    
-    .font-box-fantasy {
-        text-align: center;
-        font-family: fantasy;
-        max-width: 300px;
-        min-height: 100px;
-        color: #fff;
-        border: 1px dashed white;
-        margin: 10px 300px;
-        padding-top: 10px;
-    }
-    
-    .font-box-fantasy {
-        text-align: center;
-        font-family: fantasy;
-        max-width: 300px;
-        min-height: 100px;
-        color: #fff;
-        border: 1px dashed white;
-        margin: 10px 300px;
-        padding-top: 10px;
+
+
+
+
+
+
+
+
+    .static {
+        width: 150px;
+        height: 150px;
+        border: 1px dashed #fff;
+        position: static;
+        left: 50px;
+        margin: 10px;
     }
 
+    .relative {
+        width: 150px;
+        height: 150px;
+        border: 1px dashed #fff;
+        position: relative;
+        left: 50px;
+        margin: 10px;
+    }
+    
+    .absolute {
+        width: 150px;
+        height: 150px;
+        border: 1px dashed #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    
+    .fixed {
+        width: 150px;
+        height: 150px;
+        border: 1px dashed #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0px;
+        right: 50px;
+        margin: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .absolute-red {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #fff;
+        background-color: #ef9a9a;
+
+        z-index: 1;
+    }
+    
+    .absolute-blue {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 1px solid #fff;
+        background-color: #2272eb;
+        left: 50px;
+
+        z-index: 2;
+    }
+
+
+
+
+
+
+
+
+    .visible {
+        width: 200px;
+        height: 100px;
+        border: 1px solid #fff;
+        overflow: visible;
+        margin: 100px;
+    }
+    
+    .hidden {
+        width: 200px;
+        height: 100px;
+        border: 1px solid #fff;
+        overflow: hidden;
+        margin: 100px;
+    }
+    
+    .scroll {
+        width: 200px;
+        height: 100px;
+        border: 1px solid #fff;
+        overflow: scroll;
+        margin: 100px;
+    }
+    
+    .auto {
+        width: 200px;
+        height: 100px;
+        border: 1px solid #fff;
+        overflow: auto;
+        margin: 100px;
+    }
+
+
+
+    .block {
+        border: 1px solid #fff;
+        display: block;
+        margin: 50px;
+    }
+    
+    .inline {
+        border: 1px solid #fff;
+        display: inline;
+        margin: 50px;
+    }
+    
+    .inline-block {
+        border: 1px solid #fff;
+        display: inline-block;
+        margin: 50px;
+    }
     
 </style>
 
@@ -160,27 +229,95 @@
         </div>        
     </div>
     
-    <!-- /* 실무에서 max-width와 min-height가 많이 쓰임 */ -->
-    <h1 style="font-size: 48px;">width, height 크기</h1>
+
+
+    
+    <h1 style="font-size: 48px;">Position 위치</h1>
     <div>
-        <div class="p-box">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et magnam quo facere, sequi est repellat quasi voluptatibus consequatur ipsum? Tempora reiciendis consequatur, sequi mollitia officiis libero rem laborum illo vel quod. Illum consequuntur nam rerum quidem natus incidunt earum? Debitis dolor eaque a architecto obcaecati doloribus vel, ab quidem nulla eum id sed quisquam aliquid tempora quas animi beatae eligendi officia! Vero alias obcaecati hic mollitia explicabo a, repellendus quaerat iusto aperiam eum maxime soluta! Eligendi, consequatur. Vero eaque necessitatibus beatae laborum ipsa itaque rerum natus mollitia qui ex dicta unde perspiciatis ab illo eveniet sapiente, error consectetur quis doloribus!
+        <dl>
+            <div class="static">
+                <dt>static</dt>
+                <dd>자연스러운 흐름대로</dd>
+            </div>
+
+            <div class="relative">
+                <dt>relative</dt>
+                <dd>상대적인 위치</dd>
+            </div>
+
+            <div class="relative">
+                <dt>relative</dt>
+                <dd>상대적인 위치</dd>
+
+                <!-- 부모에 보통 relative positon을 주고 사용함 -->
+                <!-- 부모의 이미지를 relative로 사용하고, 썸네일 등 글자를 absolute로 사용할 때 -->
+                <!-- 부모 position을 기준으로 절댓값을 가짐 -->
+                <div class="absolute">
+                    <dt>absolute</dt>
+                    <dd>가까운 조상의 엘리먼트에 상대적임</dd>
+                </div>
+            </div>
+
+            <!-- 스크롤 할 때에도 따라오는 것들 (메뉴바, 탑이동버튼, 광고 등) -->
+            <div class="fixed">
+                <dt>fixed</dt>
+                <dd>뷰포트 (사용자 화면) 에 상대적임</dd>
+            </div>
+        </dl>
+    
+    
+    
+    
+    </div>
+
+
+
+
+    <!-- z-index는 여러 요소가 겹치는 경우, 상위/하위로 오게 하는 속성 -->
+    <h1 style="font-size: 48px; margin-top: 100px;">z-index 속성</h1>
+    <div class="relative" style="width: 500px;">
+        <div class="absolute-red"></div>    
+        <div class="absolute-blue"></div>    
+    </div>
+    
+
+
+
+    <h1 style="font-size: 48px; margin-top: 100px;">overflow 넘치는 부분 처리</h1>
+    <div class="overflow">        
+        <div class="visible">Lorem.</div>
+        <div class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quia sit, cumque deleniti commodi molestiae quisquam cupiditate amet eius asperiores mollitia rerum, tempora, labore magnam quidem minus incidunt veniam nesciunt?</div>
+        <div class="scroll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quia sit, cumque deleniti commodi molestiae quisquam cupiditate amet eius asperiores mollitia rerum, tempora, labore magnam quidem minus incidunt veniam nesciunt?</div>
+        <!-- <li>auto : 넘치는 부분만 스크롤로 처리함(세로만)</li> -->
+        <div class="auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quia sit, cumque deleniti commodi molestiae quisquam cupiditate amet eius asperiores mollitia rerum, tempora, labore magnam quidem minus incidunt veniam nesciunt?</div>
+    </div>
+    
+
+
+
+    <h1 style="font-size: 48px; margin-top: 100px;">Display </h1>
+    <div class="Display">        
+        <div >
+            <h3 style="font-size: 24px; margin-left: 50px;">divide</h3>
+            <div class="block">divide</div>
+            <div class="block">divide</div>
+            <span class="block">divide</span>
+        </div>
+        <div>
+            <!-- inline은 위는 마진, 패딩 적용이 안됨 / 옆으로 붙음 -->
+            <h3 style="font-size: 24px; margin-left: 50px;">inline</h3>
+            <span class="inline">lorem</span>
+            <span  class="inline">lorem</span>
+        </div>
+        <div>
+            <!-- inline-blck은 옆으로는 붙고 위 마진, 패딩 적용도 됨 -->
+            <h3 style="font-size: 24px; margin-left: 50px;">inline-block</h3>
+            <button  class="inline-block">Lorem.</button>
+            <button  class="inline-block" >Lorem.</button>
         </div>
     </div>
     
-    <h1 style="font-size: 48px;">Font 폰트</h1>
-    <div>
-        <div class="font-box-serif">Lorem ipsum dolor sit amet.</div>
-        <div class="font-box-Sansserif">로렘 입숨 돌롤 싯 아멧</div>
-        <div class="font-box-monospace">Lorem ipsum dolor sit amet.</div>
-        <div class="font-box-cursive">Lorem ipsum dolor sit amet.</div>
-        <div class="font-box-fantasy">Lorem ipsum dolor sit amet.</div>
-    </div>
-
-
-
-
-
+    
 
 
 </body>
