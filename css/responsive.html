@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reference/paintbrush.css">
+</head>
+<style>
+    body {
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    header {
+        background-color: var(--toss-blue900);
+        padding: 10px;
+    }
+    
+    footer {
+        height: 300px;
+        padding: 10px;
+        background-color: var(--toss-blue600);
+        text-align: center;
+    }
+    
+    .container::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    nav {
+        float: left;
+        width: 100%;
+    }
+    
+    main {
+        float: left;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    nav a {
+        display: block;
+        height: 50px;
+        background-color: var(--toss-blue300);
+        border: 1px solid var(--white);
+        color: var(--white);
+        text-decoration: none;
+    }
+    
+    @media (min-width: 501px) {
+        nav {
+            width: 25%;
+        }
+        
+        main {
+            float: none;
+            width: 75%;
+        }
+    }
+</style>
+<body>
+    <header>
+        <h1>header</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+        </nav>
+        <main>
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </main>
+    </div>
+
+    <footer>footer</footer>
+</body>
+</html>
