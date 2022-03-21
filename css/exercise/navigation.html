@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reference/paintbrush.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    body { background-color: var(--black); margin: 0px;}
+    nav { background-color: var(--toss-blue900); }
+
+    nav a {
+        display: inline-block;  /* inline-block : 엘리먼트 사이에 여백이 생긴다. */
+        padding: 10px;
+        color: var(--white);
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+    }
+    
+    nav a:hover:not(.active) {
+        background-color: var(--toss-blue300);
+    }
+    
+    /* <!-- - 모바일 퍼스트: min --> */
+    /* <!-- - 데스크탑 퍼스트 : max --> */
+    @media (max-width : 501px) {
+        nav a{
+            display: block;
+            text-align: center;
+        }
+    }
+</style>
+
+<body>
+    <nav class="nav">
+            <a href="" style="background-color: var(--white); color: var(--black);">HOME</a>
+            <a href="">NEWS</a>
+            <a href="">CONTACT</a>
+    </nav>
+</body>
+</html>
