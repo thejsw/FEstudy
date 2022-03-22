@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reference/paintbrush.css">
+</head>
+    <style>
+        body{
+            background-color: var(--black);
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: a;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+    
+        @keyframes a {
+            0% {background-color: var(--toss-blue200); left: 0px; top: 0px;}        
+            25% {background-color: var(--toss-blue400); left: 200px; top: 0px;}        
+            50% {background-color: var(--toss-blue900); left: 200px; top: 200px;}        
+            75% {background-color: var(--toss-blue400); left: 0px; top: 200px;}        
+            100% {background-color: var(--toss-blue200); left: 0px; top: 0px;}        
+        }
+    </style>
+<body>
+    <div></div>
+</body>
+</html>
+
+
+
