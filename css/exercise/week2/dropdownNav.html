@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<style>
-    body {
-        background-color: black;
-        color: white;
-    }
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
     
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    nav {
-        display: flex;
-        /* border: 1px dashed white; */
-    }
-    
-    nav a {
-        padding: 20px;
-        /* border: 1px dashed white; */
-    }
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            /* border: 1px dashed white; */
+        }
+        
+        nav a {
+            padding: 20px;
+            /* border: 1px dashed white; */
+        }
 
-    .dropdown {
-        /* border: 1px dashed white; */
-    }
-
-    .dropBtn {
-        display: inline;
-        padding: 10px;
-        width: 74px;
-        height: 60px;
-        border: none;
-        background-color: inherit;
-        color: inherit;
-    }
-
-    /* 위치 조정을 따로 하지 않으면, 부모 속성 바깥으로 나옴 */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        width: 100px;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .dropdown-content ul { 
-        /* border: 1px solid white; */
-        width: 150px;
-        margin-top: 1px;
-        padding: 0px; 
-    }
-    .dropdown-content li { 
-        padding: 15px; 
-        list-style-type: none; 
-    }
-</style>
+        .dropdown {
+            /* border: 1px dashed white; */
+        }
+        
+        .dropBtn {
+            display: inline;
+            padding: 10px;
+            width: 74px;
+            height: 60px;
+            border: none;
+            background-color: inherit;
+            font-size: 16px;
+            color: inherit;
+        }
+        
+        /* 위치 조정을 따로 하지 않으면, 부모 속성 바깥으로 나옴 */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-content ul { 
+            /* border: 1px solid white; */
+            width: 150px;
+            margin-top: 1px;
+            padding: 0px; 
+        }
+        .dropdown-content li { 
+            padding: 15px; 
+            list-style-type: none; 
+        }
+        
+        .container {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(109, 109, 190);
+            border: 1px dashed white;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .item:nth-child(1) {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
 
 <body>
     <h1>dropdown</h1>
-
+    
     <nav>
         <a href="#">홈</a>
         <a href="#">소개</a>
@@ -82,5 +103,12 @@
             </div>
         </div>
     </nav>
+
+    <main class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </main>
 </body>
 </html>
