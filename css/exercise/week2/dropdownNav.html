@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: black;
+        color: white;
+    }
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    nav {
+        display: flex;
+        /* border: 1px dashed white; */
+    }
+    
+    nav a {
+        padding: 20px;
+        /* border: 1px dashed white; */
+    }
+
+    .dropdown {
+        /* border: 1px dashed white; */
+    }
+
+    .dropBtn {
+        display: inline;
+        padding: 10px;
+        width: 74px;
+        height: 60px;
+        border: none;
+        background-color: inherit;
+        color: inherit;
+    }
+
+    /* 위치 조정을 따로 하지 않으면, 부모 속성 바깥으로 나옴 */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        width: 100px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content ul { 
+        /* border: 1px solid white; */
+        width: 150px;
+        margin-top: 1px;
+        padding: 0px; 
+    }
+    .dropdown-content li { 
+        padding: 15px; 
+        list-style-type: none; 
+    }
+</style>
+
+<body>
+    <h1>dropdown</h1>
+
+    <nav>
+        <a href="#">홈</a>
+        <a href="#">소개</a>
+        <a href="#">메뉴</a>
+        <div class="dropdown">
+            <button class="dropBtn">더보기</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li>메뉴1</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
