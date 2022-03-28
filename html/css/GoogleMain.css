@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+h1 {
+    margin: 160px 20px 20px 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+
+.nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+/* .dropdown-container {
+    display: none;
+} */
+
+.dropdown-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.col {
+    width: 33.3%;
+    text-align: center;
+}
+
+.drop-btn:hover .dropdown-content{
+    display: block;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    font-size: 72px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title span:first-child { 
+    font-size: 100px;
+    color: dodgerblue; 
+}
+.title span:nth-child(2) { color: red; }
+.title span:nth-child(3) { color: gold; }
+.title span:nth-child(4) { color: dodgerblue; }
+.title span:nth-child(5) { color: green; }
+.title span:nth-child(6) { color: red; }
+
+.googleSearchBar {
+    margin-top: 60px;
+}
+
+.googleSearchBar form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    width: 550px;
+}
+
+.googleSearchBar input{
+    width: 100%;
+    padding: 15px 50px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+}
+
+.googleSearchBar .icon-left, .icon-right{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.googleSearchBar .icon-left {
+    top: 15px;
+    left: 20px;
+}
+
+.googleSearchBar .icon-right {
+    top: 15px;
+    right: 20px;
+}
