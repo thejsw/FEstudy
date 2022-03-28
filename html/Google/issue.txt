@@ -1,0 +1,3 @@
+문제1. display 속성이 겹침
+문제2. hover가 안됨
+문제3. dropdown-content 내부 마진이 안됨
