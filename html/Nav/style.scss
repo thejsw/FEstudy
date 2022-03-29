@@ -1,0 +1,23 @@
+$body_color: black;
+$white: white;
+$border: 1px solid #ddd;
+
+body {
+    background-color: $body_color;
+}
+
+
+nav {
+    white-space: nowrap;
+    overflow: auto;
+    border: $border;
+  }
+  
+  nav a {
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    border: $border;
+    color: $white;
+    text-decoration: none;
+  }
