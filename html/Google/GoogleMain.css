@@ -1,13 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: black; */
+    background-color: black;
 }
 
 h1 {
     margin: 160px 20px 20px 20px;
 }
 
+
+/* nav */
 .nav {
     display: flex;
     justify-content: end;
@@ -17,36 +19,42 @@ h1 {
 .nav a {
     margin: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 14px;
 }
 
-/* .dropdown-container {
-    display: none;
-} */
 
-.dropdown-content {
+/* dropdown */
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-container .dropdown-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
     width: 300px;
-    height: 300px;
+    height: 400px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 10px;
+    background-color: white;
 }
 
-.col {
+.dropdown-container .col {
     width: 33.3%;
     text-align: center;
+    color: black;
 }
 
-.drop-btn:hover .dropdown-content{
-    display: block;
-}
 
+/* title */
 .title {
     display: flex;
     justify-content: center;
@@ -66,10 +74,8 @@ h1 {
 .title span:nth-child(5) { color: green; }
 .title span:nth-child(6) { color: red; }
 
-.googleSearchBar {
-    margin-top: 60px;
-}
 
+/* SearchBar */
 .googleSearchBar form {
     display: flex;
     justify-content: center;

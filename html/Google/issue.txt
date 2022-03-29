@@ -1,3 +1,5 @@
 문제1. display 속성이 겹침
 문제2. hover가 안됨
-문제3. dropdown-content 내부 마진이 안됨
+
+문제3. dropdown-content 내부 마진이 안됨 > wrap되는 상황
+문제4. 햄버거 메뉴 클릭시 위로 올라가는 현상 > 수동 줄맞춤
