@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            /* border: 1px dashed white; */
+        }
+        
+        nav a {
+            padding: 20px;
+            /* border: 1px dashed white; */
+        }
+
+        .dropdown {
+            /* border: 1px dashed white; */
+        }
+        
+        .dropBtn {
+            display: inline;
+            padding: 10px;
+            width: 74px;
+            height: 60px;
+            border: none;
+            background-color: inherit;
+            font-size: 16px;
+            color: inherit;
+        }
+        
+        /* 위치 조정을 따로 하지 않으면, 부모 속성 바깥으로 나옴 */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100px;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown-content ul { 
+            /* border: 1px solid white; */
+            width: 150px;
+            margin-top: 1px;
+            padding: 0px; 
+        }
+        .dropdown-content li { 
+            padding: 15px; 
+            list-style-type: none; 
+        }
+        
+        /* viewport 기준 가로.세로 가운데 정렬 */
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background-color: rgb(109, 109, 190);
+            border: 1px dashed white;
+        }
+
+    </style>
+
+    <style>
+        .sidemenu {
+            display: none;
+            width: 80px;
+            position: fixed;
+            top: 0; left: 0;
+            border: 1px dashed;
+        }
+
+        /* 세로정렬 하는 법 1. display: block; */
+        /* 세로정렬 하는 법 2. display: flex; flex-direction: colulmn; */
+        .sidemenu a {
+            display: block;
+        }
+
+        /* hover는 같은 트리 내에서 적용 */
+        .menu:hover .sidemenu {
+            display: block;
+        }
+    </style>
+<body>
+    <h1>dropdown</h1>
+    
+    <nav>
+        <a href="#">홈</a>
+        <a href="#">소개</a>
+        <a href="#">메뉴</a>
+        <div class="dropdown">
+            <button class="dropBtn">더보기</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li>메뉴1</li>
+                    <li>메뉴2</li>
+                    <li>메뉴3</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </main>
+
+    <aside>
+        <div class="menu">
+            <h1>hover here!</h1>
+            <div class="sidemenu">
+                <a href="#">홈</a>
+                <a href="#">소개</a>
+                <a href="#">블로그</a>
+            </div>
+        </div>
+    </aside>
+</body>
+</html>

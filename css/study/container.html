@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: #000;
+        color: #fff;
+    }
+
+    h1 {
+        margin: 25px;
+        padding: 25px;
+        color: #fff;
+        font-size: 24px;
+    }
+
+    .div {
+        padding: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    .div-group1 {
+        width: 100px;
+        height: 100px;
+        margin: 25px 300px;
+        border: 1px dashed white;
+    }
+
+    .div-group2 {
+        width: 100px;
+        height: 100px;
+        margin: 0px 300px;
+        padding: 50px;
+        border: 1px dashed white;
+    }
+    
+    .border-box {
+        box-sizing: border-box;
+        margin: 0px 300px;
+        border: 1px dashed white;
+        color: #fff;
+    }
+    
+    .content-box {
+        box-sizing: content-box;
+        margin: 0px 300px;
+        border: 1px dashed white;
+        color: #fff;
+    }
+    
+
+
+
+
+
+
+
+
+    .static {
+        position: static;
+        left: 50px;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        border: 1px dashed #fff;
+    }
+
+    .relative {
+        position: relative;
+        left: 50px;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        border: 1px dashed #fff;
+    }
+    
+    .absolute {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px dashed #fff;
+    }
+    
+    .fixed {
+        position: fixed;
+        top: 0px;
+        right: 50px;
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: 1px dashed #fff;
+    }
+
+
+
+
+
+
+
+
+
+
+    .absolute-red {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: #ef9a9a;
+        border: 1px solid #fff;
+
+        z-index: 1;
+    }
+    
+    .absolute-blue {
+        position: absolute;
+        left: 50px;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        background-color: #2272eb;
+        border: 1px solid #fff;
+    }
+
+
+
+
+
+
+
+
+    .visible {
+        overflow: visible;
+        width: 200px;
+        height: 100px;
+        margin: 100px;
+        border: 1px solid #fff;
+    }
+    
+    .hidden {
+        overflow: hidden;
+        width: 200px;
+        height: 100px;
+        margin: 100px;
+        border: 1px solid #fff;
+    }
+    
+    .scroll {
+        overflow: scroll;
+        width: 200px;
+        height: 100px;
+        margin: 100px;
+        border: 1px solid #fff;
+    }
+    
+    .auto {
+        overflow: auto;
+        width: 200px;
+        height: 100px;
+        margin: 100px;
+        border: 1px solid #fff;
+    }
+
+
+
+    .block {
+        display: block;
+        margin: 50px;
+        border: 1px solid #fff;
+    }
+    
+    .inline {
+        display: inline;
+        margin: 50px;
+        border: 1px solid #fff;
+    }
+    
+    .inline-block {
+        display: inline-block;
+        margin: 50px;
+        border: 1px solid #fff;
+    }
+    
+</style>
+
+
+
+
+<body>
+    
+    <!-- style을 직접 지정해주는 것이 우선도가 가장 높음 -->
+    <h1 style="font-size: 48px;">Margin, Padding 여백</h1>
+    <div>
+        <!-- Margin collaps : 마진이 겹치는 경우 -->
+        <h1 >Margin 외부여백</h1>
+        <div class="div-group1">
+        </div>
+        
+        <h1>Padding 내부여백</h1>
+        <div class="div-group2">
+        </div>
+        
+        <h1>Content box</h1>
+        <div class="content-box">content-box
+        </div>
+        
+        <h1>Border box</h1>
+        <div class="border-box">border-box
+        </div>        
+    </div>
+    
+
+
+    
+    <h1 style="font-size: 48px;">Position 위치</h1>
+    <div>
+        <dl>
+            <div class="static">
+                <dt>static</dt>
+                <dd>자연스러운 흐름대로</dd>
+            </div>
+
+            <div class="relative">
+                <dt>relative</dt>
+                <dd>상대적인 위치</dd>
+            </div>
+
+            <div class="relative">
+                <dt>relative</dt>
+                <dd>상대적인 위치</dd>
+
+                <!-- 부모에 보통 relative positon을 주고 사용함 -->
+                <!-- 부모의 이미지를 relative로 사용하고, 썸네일 등 글자를 absolute로 사용할 때 -->
+                <!-- 부모 position을 기준으로 절댓값을 가짐 -->
+                <div class="absolute">
+                    <dt>absolute</dt>
+                    <dd>가까운 조상의 엘리먼트에 상대적임</dd>
+                </div>
+            </div>
+
+            <!-- 스크롤 할 때에도 따라오는 것들 (메뉴바, 탑이동버튼, 광고 등) -->
+            <div class="fixed">
+                <dt>fixed</dt>
+                <dd>뷰포트 (사용자 화면) 에 상대적임</dd>
+            </div>
+        </dl>
+    
+    
+    
+    
+    </div>
+
+
+
+
+    <!-- z-index는 여러 요소가 겹치는 경우, 상위/하위로 오게 하는 속성 -->
+    <h1 style="font-size: 48px; margin-top: 100px;">z-index 속성</h1>
+    <div class="relative" style="width: 500px;">
+        <div class="absolute-red"></div>    
+        <div class="absolute-blue"></div>    
+    </div>
+    
+
+
+
+    <h1 style="font-size: 48px; margin-top: 100px;">overflow 넘치는 부분 처리</h1>
+    <div class="overflow">        
+        <div class="visible">Lorem.</div>
+        <div class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quia sit, cumque deleniti commodi molestiae quisquam cupiditate amet eius asperiores mollitia rerum, tempora, labore magnam quidem minus incidunt veniam nesciunt?</div>
+        <div class="scroll">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quia sit, cumque deleniti commodi molestiae quisquam cupiditate amet eius asperiores mollitia rerum, tempora, labore magnam quidem minus incidunt veniam nesciunt?</div>
+        <!-- <li>auto : 넘치는 부분만 스크롤로 처리함(세로만)</li> -->
+        <div class="auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quia sit, cumque deleniti commodi molestiae quisquam cupiditate amet eius asperiores mollitia rerum, tempora, labore magnam quidem minus incidunt veniam nesciunt?</div>
+    </div>
+    
+
+
+
+    <h1 style="font-size: 48px; margin-top: 100px;">Display </h1>
+    <div class="Display">        
+        <div >
+            <h3 style="font-size: 24px; margin-left: 50px;">divide</h3>
+            <div class="block">divide</div>
+            <div class="block">divide</div>
+            <span class="block">divide</span>
+        </div>
+        <div>
+            <!-- inline은 위는 마진, 패딩 적용이 안됨 / 옆으로 붙음 -->
+            <h3 style="font-size: 24px; margin-left: 50px;">inline</h3>
+            <span class="inline">lorem</span>
+            <span  class="inline">lorem</span>
+        </div>
+        <div>
+            <!-- inline-blck은 옆으로는 붙고 위 마진, 패딩 적용도 됨 -->
+            <h3 style="font-size: 24px; margin-left: 50px;">inline-block</h3>
+            <button  class="inline-block">Lorem.</button>
+            <button  class="inline-block" >Lorem.</button>
+        </div>
+    </div>
+    
+    
+
+
+</body>
+</html>

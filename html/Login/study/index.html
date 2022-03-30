@@ -1,0 +1,388 @@
+<!-- DOM - Document Object Model - HTML은 DOM이다-->
+<!-- DOM tree - Object가 가지처럼 들어가있는 형태-->
+<!-- alt + shift 영역복사 -->
+<!--  alt 방향키 이동 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- heading 제목 -->
+    <h1>hello world!</h1>
+    <h2>hello world!</h2>
+    <h3>hello world!</h3>
+    <h4>hello world!</h4>
+    <h5>hello world!</h5>
+
+    <hr>
+
+    <!-- paragraph 문단 > 블록요소-->
+    <!-- span 문단  > 인라인요소 -->
+    <p>
+    <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Tempore, molestias! <br>
+    <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing. <br>
+    <b>Lorem</b> ipsum, dolor sit amet consectetur adipisicing elit. Quo accusantium tenetur cumque, non fuga corrupti consequuntur error earum beatae omnis!
+    <b>Lorem</b> ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, odit ut? <br>
+    <b>Lorem</b> ipsum dolor sit, amet consectetur adipisicing elit. Non culpa error maiores veritatis optio architecto fugiat eius, reiciendis itaque quisquam, tempore saepe. Nihil, eaque! Magnam, corporis quia necessitatibus similique, doloribus, fugiat sed error a nostrum ex obcaecati iste! Sed aliquam nam optio quaerat, at voluptatum quae quo vero, provident, tenetur officiis repellendus aperiam nulla maiores voluptas aspernatur quas. Amet consequatur hic facilis tempore fugiat quo nobis nihil consectetur? <br>
+
+        <span style="color: blue;">
+            <b>Lorem</b> Inventore unde esse iste temporibus vero harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sit eos id deleniti porro, at consectetur. Unde. <br>
+            <i>Lorem ipsum dolor sit amet consectetur adipisicing elit.</i><br>
+        </span>
+    </p>
+
+    <hr>
+
+    <!-- a 링크 -->
+    <!-- href : 링크를 의미, 홈페이지 외에도 다른 기능 수행 가능 (전화,문자,이메일 등) -->
+    <!-- target : 링크된 문서를 클릭했을 때 문서가 열릴 위치를 명시함 (_blank, _self) -->
+    <!-- rel : 현재 문서와 링크된 문서 사이의 연관관계 -->
+    <h3>금융의 모든 것, 토스</h3>
+    <a href="http://toss.im" target="_blank" rel="dream">toss.im</a><br>
+    <a href="mailto:jswtncapetnc@gmail.com" target="_blank" rel="email">이메일</a><br>
+    <a href="tel:1234567890" target="_blank" rel="tel">전화</a>
+    
+    <hr>
+
+
+
+
+
+
+
+
+    <!-- unordered list, ordered list -->
+    <h3>과일리스트</h3>
+    <ul style="list-style-type: none;">
+        <li>사과</li>
+        <li>포도</li>
+        <li>멜론</li>
+        <li>딸기</li>
+        <li>키위</li>
+    </ul>
+    
+    <h3>알파벳 순서</h3>
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+        <li>e</li>
+    </ol>
+
+    <hr>
+    <!-- Data list -->
+    <!-- Data title -->
+    <!-- Data description -->
+    <!-- 데이터의 계층 관계를 명시적으로 표현하기 위해 활용 -->
+    <h3>나라별 수도</h3>
+    <dl>
+        <dt>서울</dt>
+        <dd>한국의 수도</dd>
+    
+        <dt>도쿄</dt>
+        <dd>일본의 수도</dd>
+    </dl>
+
+    <hr>
+
+    <!-- Table 표, 엑셀 -->
+    <!-- Table row -->
+    <!-- Table head -->
+    <h3>인물 정보</h3>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>연락처</th>
+            <th>주소</th>
+        </tr>
+        <tr>
+            <td>재석</td>
+            <td>02</td>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <td>호동</td>
+            <td>03</td>
+            <td>부산</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h3>인물 주소</h3>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th colspan="2">주소</th>
+        </tr>
+
+        <tr>
+            <td>재석</td>
+            <td>서울시</td>
+            <td>강남구</td>
+        </tr>
+        <tr>
+            <td>호동</td>
+            <td>부산시</td>
+            <td>해운대구</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>이름</th>
+            <td>재석</td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td>서울</td>
+        </tr>
+        <tr>
+            <th>상세주소</th>
+            <td>강남구 압구정동</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>이름</th>
+            <td>재석</td>
+        </tr>
+        <tr>
+            <th rowspan="2">상세주소</th>
+            <td>서울시</td>
+        </tr>
+        <tr>
+            <!-- <th>상세주소</th> -->
+            <td>강남구 압구정동</td>
+        </tr>
+    </table>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+    <!-- Form 양식 -->
+    <!-- 서버와 교류하기 위한 수단 -->
+    <!-- Form method(HTTP Method) : GET, POST, PUT, DELETE -->
+    <!-- GET : 데이터가 주소창으로 전돨됨 - 브라우저 캐시 ex)검색, 게시글 가져오기-->
+    <!-- POST : 데이터가 내부적으로 전달됨 - 브라우저 히스토리에 남지않음(민감정보) - 로그인, 회원가입, CRUD-->
+    <!-- 서버로 데이터가 전달되기 위해서는 name이 필수적으로 포함되어야 함 -->
+    <h1>Google</h1>
+    <form action="./search.php" method="GET">
+
+    <!-- placeholder : 도움말 -->
+    <!-- input에서 여러가지 속성들이 백엔드로 전달될 때 분류됨 -->
+    <!-- label > input의 설명 -->
+        <input type="text" name="" id="" placeholder="검색어를 입력하세요">
+        <button>검색</button>
+    </form>
+
+    <hr>
+
+    <h1>로그인</h1>
+    <form action="./login.php" method="post">
+        <div>
+            <label for="">아이디</label>
+            <input type="text" name="userid" id="아이디를 입력하세요">
+        </div>
+        <div>
+            <label for="">비밀번호</label>
+            <input type="text" name="userpw" id="비밀번호를 입력하세요">
+        </div>
+        <div>
+            <input type="checkbox" name="autologin" id="">
+            <label for="autologin">자동로그인</label>
+        </div>
+        <div>
+            <button type="submit">로그인</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>블로그 작성하기</h1>
+    <form action="" method="get">
+        <div class="form-group">
+            <label for="">제목</label>
+            <input type="text" name="title" id="" placeholder="제목을 입력하세요">
+        </div>
+        <div class="form-group">
+            <textarea name="content" id="" cols="30" rows="10" placeholder="내용을 입력하세요"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="">파일 업로드</label>
+            <!-- 여러개의 파일을 업로드할 때 multiple -->
+            <input type="file" name="myfile" multiple>
+        </div>
+        </div>
+        <div class="form-group">
+            <button type="submit">등록하기</button>
+        </div>
+    </form>
+
+    <hr>
+
+    <h1>상품업로드</h1>
+    <form action="./upload.php" method="POST">
+
+        <div class="form-group">
+            <label for="상품명">상품명</label>
+            <input type="text" name="product_name" value="" id="" placeholder="상품명을 입력하세요">
+        </div>
+
+        <div class="form-group">
+            <label for="카테고리">카테고리</label>
+            <select name="category" id="">
+                <option value="outer">아우터</option>
+                <option value="upside">상의</option>
+                <option value="downside">하의</option>
+                <option value="accsesorry">악세사리</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="수량">수량</label>
+            <input type="number" name="number" placeholder="$">
+        </div>
+        <br>
+        
+        <div class="form-group">
+            <label for="">상품 설명</label>
+            <textarea name="description" id="" cols="30" rows="10" placeholder="상품 설명을 입력하세요"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" name="save">저장</button>
+            <button type="submit" name="cancel">취소</button>
+        </div>
+
+    </form>
+
+    <hr>
+
+    <h1>숙박 예약</h1>
+    <form action="">
+        <div class="form-group">
+            <h3>체크인</h3>
+
+            <label for="체크인 날짜">날짜</label>
+            <input type="date" name="checkin_date" id="">
+
+            <label for="체크인 시간">시간</label>
+            <input type="time" name="checkin_time" id="">
+        </div>
+
+        <div class="form-group">
+            <h3>체크아웃</h3>
+
+            <label for="체크아웃 날짜">날짜</label>
+            <input type="date" name="checkout_date" id="">
+
+            <label for="체크아웃 시간">시간</label>
+            <input type="time" name="checkout_time" id="">
+        </div>
+        <br>
+        <!-- radio에서 input type name을 같게 할 경우, 복수선택이 안됨 -->
+        <div class="form-group">
+            <label for="성인 1명">성인 1명</label>
+            <input type="radio" name="member" id="" value="1adult">
+            
+            <label for="성인 2명">성인 2명</label>
+            <input type="radio" name="member" id="" value="2adult">
+            
+            <label for="성인 3명">성인 3명</label>
+            <input type="radio" name="member" id="" value="3adult">
+            
+            <label for="성인 4명">성인 4명</label>
+            <input type="radio" name="member" id="" value="4adult">
+        </div>
+        <br>
+
+        <div class="form-group">
+            <label for="">가격 범위</label>
+            <input type="range" name="range" id="" min="1$" max="100,000$">
+        </div>
+        <br>
+       
+        <div class="form-group">
+            <button type="submit" name="reservation">예약</button>
+            <button type="submit" name="cancel">취소</button>
+        </div>
+        <br>
+    </form>
+
+    <hr>
+    
+
+
+
+
+
+
+
+    <!-- HTML Reserved Words (HTML에서 사용된느 문자들) -->
+    <!-- UTF-8 인코딩 방식에서 특수문자가 깨지는 현상이 발생할 수 있기 때문에 사용함 -->
+    <!-- 엔티티 이름 : &으로 시작한다  > 특수문자를 대체하기 위해 사용-->
+    <!-- 엔티티 숫자 : &#으로 시작한다 > Symbol이나 Emoji를 사용하기 위해 사용-->
+    <h1>HTML Entity (HTML 엔티티)</h1>
+    <div class="entity-group">
+        <span>less than : </span>
+        <span>&lt;</span><br>
+
+        <span>greater than : </span>
+        <span>&gt;</span><br>
+
+        <span>quoation : </span>
+        <span>&quot;</span><br>
+
+        <span>apostrophe : </sapn>
+        <span>&apos;</span><br>
+
+        <span>ampersnad : </span>
+        <span>&amp;</span><br>
+
+        <span>white-space : </span>
+        <span>&nbsp;</span><br>
+
+        <span>ghost emoji : </span>
+        <span style="font-size: 48px;">👻</span><br>
+        
+        <span>happy emoji : </span>
+        <span style="font-size: 48px;">😀</span><br>
+        
+        <span>whale emoji : </span>
+        <span style="font-size: 48px;">&#128011;</span><br>
+        
+        <span>diamond emoji : </span>
+        <span style="font-size: 48px;">&#128142;</span><br>
+        
+        <span>yellow heart emoji : </span>
+        <span style="font-size: 48px;">&#128155;</span><br>
+    </div>
+</body>
+</html>
