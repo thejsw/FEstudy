@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import "paint.scss";
+
+@mixin body_reset {
+    margin: 0;
+    padding: 0;
+    background-color: $greyOpacity900;
+    color: $white;
+}
+@mixin a_reset {
+    text-decoration: none;
+}
+
+body {
+    @include body_reset;
+}
+
+a {
+    @include a_reset;
+}
+
+br {
+    border: 1px solid white;
+}

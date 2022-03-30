@@ -1,0 +1,6 @@
+개선점
+
+1. dropdown 메뉴 > duration, color 변경
+2. background 색상 > nav와 같지 않음
+3. MainText : 중간에 위치 x
+4. SubText : 반응형 적용시 사라짐 x

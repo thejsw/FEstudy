@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(2, 9, 19, 0.91);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+br {
+  border: 1px solid white;
+}
+/*# sourceMappingURL=reset.css.map */
