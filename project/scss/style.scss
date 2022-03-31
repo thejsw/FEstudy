@@ -95,3 +95,103 @@
     font-size: 16px;
     font-family: "Noto Sans KR","Noto+Sans","Malgun Gothic","맑은 고딕",arial,sans-serif;
 }
+.CafeInfo .Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.CafeInfo .smallContainer {
+    width: 400px;
+    height: 450px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px $greyOpacity600;
+    text-align: center;
+}
+
+// CafeMenu
+.CafeMenu {
+    margin: 120px 40px;
+    background-color: rgb(212, 209, 209);
+    color: $black;
+}
+.CafeMenu .Title {
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Noto Sans KR","Noto+Sans","Malgun Gothic","맑은 고딕",arial,sans-serif;
+}
+.CafeMenu .Menua {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+.CafeMenu a {
+    margin: 20px;
+    padding: 20px;
+}
+.CafeMenu .About {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Noto Sans KR","Noto+Sans","Malgun Gothic","맑은 고딕",arial,sans-serif;
+}
+.CafeMenu .Container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.CafeMenu .smallContainer { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+}
+
+// CafeReservation
+.CafeReservation {
+    margin: 120px 40px;
+    background-color: rgb(212, 209, 209);
+    color: $black;
+}
+.CafeReservation .Title {
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    font-size: 32px;
+    font-family: "Noto Sans KR","Noto+Sans","Malgun Gothic","맑은 고딕",arial,sans-serif;
+}
+.CafeReservation .About {
+    display: block;
+    padding: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Noto Sans KR","Noto+Sans","Malgun Gothic","맑은 고딕",arial,sans-serif;
+}
+.CafeReservation input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #ddd;
+}   
+.CafeReservation .SendBtn {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 40px;
+    padding: 20px;
+}
