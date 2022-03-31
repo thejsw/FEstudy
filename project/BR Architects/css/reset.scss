@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@mixin body_reset {
+    margin: 0;
+    padding: 0;
+}
+@mixin a_reset {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    @include body_reset;
+}
+
+a {
+    @include a_reset;
+}

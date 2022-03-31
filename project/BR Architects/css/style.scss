@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import "reset.scss";
+@import "paint.scss";
+
+.BR-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+.BR-nav {
+    width: 100%;
+    overflow: hidden;
+}
+.BR-nav::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+.BR-top .BR-nav {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+.BR-btn {
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.BR-white {
+    background-color: #fff;
+    color: #000;
+  }
+  
+.BR-wide {
+    letter-spacing: 4px;
+  }
+  
+.BR-padding {
+    padding: 8px 16px;
+  }
+  .BR-right {
+      float: right;
+  }
