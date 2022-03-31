@@ -194,6 +194,7 @@ br {
 }
 
 .CafeReservation {
+  height: 680px;
   margin: 120px 40px;
   background-color: #d4d1d1;
   color: black;
@@ -232,7 +233,10 @@ br {
   margin-left: auto;
   margin-right: auto;
   width: 200px;
-  height: 40px;
-  padding: 20px;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-family: "Noto Sans KR","Noto+Sans","Malgun Gothic","맑은 고딕",arial,sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
