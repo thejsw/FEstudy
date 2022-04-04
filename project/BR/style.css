@@ -31,6 +31,7 @@ img {
 
 input[type=text], input[type=date] {
     padding: 16px 8px;
+    margin: 5px 0px;
     border: 1px solid #ddd;
 }
 
@@ -45,6 +46,7 @@ input[type=text], input[type=date] {
 }
 .btn:hover {
     background-color: #ddd;
+    cursor: pointer;
 }
 
 .border {
@@ -76,6 +78,7 @@ input[type=text], input[type=date] {
 
 .padding-8 { padding: 8px; }
 .padding-5 { padding: 5px; }
+.padding-15 { padding: 15px; }
 .padding-48 { padding: 48px 0px; }
 
 .bg-image {
