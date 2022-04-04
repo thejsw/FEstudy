@@ -8,31 +8,32 @@ a {
   color: black;
 }
 
+*::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 .BR-top {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100% !important;
   z-index: 1;
 }
 
 .BR-nav {
-  width: 100%;
-  overflow: hidden;
-}
-
-.BR-nav::before {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.BR-top .BR-nav {
+  width: 100% !important;
   padding: 8px 16px;
   float: left;
   width: auto;
   border: none;
   display: block;
   outline: 0;
+}
+
+.BR-nav::before, .BR-nav::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .BR-btn {
@@ -59,6 +60,15 @@ a {
 }
 
 .BR-right {
-  float: right;
+  float: right !important;
+}
+
+.BR-menu {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
 }
 /*# sourceMappingURL=style.css.map */
