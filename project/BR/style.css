@@ -20,6 +20,10 @@ p {
 a {
     text-decoration: none;
     color: #000;
+    font-size: 20px;
+}
+a:hover {
+    background-color: #ddd;
 }
 img {
     width: 100%;
@@ -33,10 +37,14 @@ input[type=text], input[type=date] {
 .btn {
     border: none;
     font-size: 16px;
-    background-color: #ddd;
+    background-color: white;
     padding: 15px 32px;
     text-align: center;
     display: inline-block;
+    border: 1px solid #ddd;
+}
+.btn:hover {
+    background-color: #ddd;
 }
 
 .border {
