@@ -108,9 +108,13 @@
 
 /* main */
 .p-mainsection {
+    display: block;
     width: 100%;
     height: 800px;
-    background: url("img/TossMain.png");
+    background-image: url("../img/TossMain.png");
+    background-color: red;
+    background-size: cover;
+    background-position: center;
 }
 .p-main {
     display: flex;
