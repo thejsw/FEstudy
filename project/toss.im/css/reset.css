@@ -1,0 +1,26 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+body { line-height: 1; }
+div { display: block; }
+a { 
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px; 
+    text-decoration: none;
+    color: #000; 
+}
+ol, ul {
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
