@@ -1,6 +1,9 @@
 @import url(reset.css);
 @import url(brush.css);
 
+/* margin */
+.mg-bottom-140 { margin-bottom: 200px; }
+
 /* padding */
 .padding-12 { padding: 12px 10px; }
 .padding-18 { padding: 18px 28px; }
@@ -223,6 +226,52 @@
 
 
 /* payment */
+
+.p-pm--info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% + 30px);
+    margin: 0px 0px 150px;
+}
+.p-pm--subwriting {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 38px;
+    width: 556px;
+    height: 100%;
+}
+.p-pm--subwriting h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #3182f6;
+}
+.p-pm--subwriting h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #191f28;
+}
+.p-pm--subwriting p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: rgb(107, 118, 132);
+}
+.p-pm--img {
+    flex-basis: calc(50%);
+    max-width: calc(50%);
+    width: 100%;
+}
 
 
 
