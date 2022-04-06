@@ -226,7 +226,6 @@
 
 
 /* payment */
-
 .p-pm--info {
     display: flex;
     justify-content: space-between;
@@ -273,6 +272,41 @@
     width: 100%;
 }
 
+
+/* footer */
+.p-footer {
+    display: block;
+    margin-top: 700px;
+    padding: 50px 0 100px;
+    background-color: #191f28;
+}
+.p-footer--inner {
+    max-width: 1064px;
+    margin: auto;
+    padding: 0 67px;
+    box-sizing: border-box;
+}
+.p-footer--site-group-list {
+    display: flex;
+    padding-bottom: 50px;
+}
+.p-footer--site-group {
+    width: 170px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+.p-footer--site-group h1 {
+    margin-bottom: 5px;
+    color: var(--grey400);
+    font-size: 16px;
+}
+.p-footer--site-group a {
+    color: var(--grey600);
+    font-size: 14px;
+    font-weight: 500;
+}
 
 
 
