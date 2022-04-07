@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="toss.im">
     <link rel="stylesheet" href="css/style.css">
     <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link href="img/symbol-toss-blue.png" rel="shortcut icon" type="image/x-icon">
     <script src="https://kit.fontawesome.com/bee4313118.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+
+    <title>토스</title>
 </head>
 <body>
     
@@ -24,12 +27,12 @@
                         </a>
                         <!-- on-mobile -->
                         <div class="p-navbar--right-on-mobile">
-                            <button class="p-navbar--dropdown-toggler">
+                            <button class="p-navbar--dropdown-toggler"  onclick="document.getElementById('nav').style.display='none';">
                                 <span class=""><i class="fa-solid fa-align-justify"></i></span>
                             </button>
                         </div>
                         <!--  -->
-                        <div class="p-navbar--content">
+                        <div class="p-navbar--content" id="nav">
                             <ul class="p-navbar--menu fontSize-14">
                                 <div class="p-navbar--leftitem">
                                     <li class="p-navbar--item">
@@ -49,9 +52,9 @@
                                     </li>
                                 </div>
                                 <div class="p-navbar--rightitem">
-                                    <li class="p-navbar--item">KOR</li>
-                                    <li class="p-navbar--item">|</li>
-                                    <li class="p-navbar--item">ENG</li>
+                                        <li class="p-navbar--item">KOR</li>
+                                        <li class="p-navbar--item">|</li>
+                                        <li class="p-navbar--item">ENG</li>
                                 </div>
                             </ul>
 
