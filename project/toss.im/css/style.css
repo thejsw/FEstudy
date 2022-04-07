@@ -392,6 +392,7 @@
         background-color: #fff;
         display: block;
         position: absolute;
+        left: 0;
         padding-top: 60px;
         max-height: 100vh;
         width: 100%;
