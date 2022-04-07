@@ -223,7 +223,31 @@
     line-height: 1.5;
     color: rgb(51, 61, 75);
 }
-
+/* .p-section {
+    height: 800px;
+}
+.p--title h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.p--title h2 {
+    font-size: 28px;
+}
+.p-hp--mockup-hpleft, .p-hp--mockup-hpright {
+    top: 300px;
+    max-width: 300px;
+}
+.p-hp--mockup-hpleft {
+    left: 300px;
+}
+.p-hp--mockup-hpright {
+    left: 600px;
+}
+.p-hp--subwriting {
+    top: 900px;
+    right: -150px;
+    font-size: 17px;
+} */
 
 /* payment */
 .p-pm--info {
@@ -389,6 +413,36 @@
         height: 300px;
         padding: 100px 0px;
     }
+
+    /* main */
+    .p-section {
+        height: 800px;
+    }
+    .p--title h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .p--title h2 {
+        font-size: 28px;
+    }
+    .p-hp--mockup-hpleft, .p-hp--mockup-hpright {
+        top: 300px;
+        max-width: 300px;
+    }
+    .p-hp--mockup-hpleft {
+        left: 300px;
+    }
+    .p-hp--mockup-hpright {
+        left: 600px;
+    }
+    .p-hp--subwriting {
+        top: 900px;
+        right: -150px;
+        font-size: 17px;
+    }
+
+
+    /* footer */
     .p-footer--site-group-list {
         flex-direction: column;
     }
