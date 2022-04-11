@@ -26,11 +26,11 @@ body {
 
 .wrap {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
+  position: relative;
   -webkit-perspective: 1300px;
           perspective: 1300px;
-  position: relative;
 }
 
 .wrap > video {
@@ -41,5 +41,17 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
+  opacity: 0.5;
+}
+
+.circle {
+  width: 600px;
+  height: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -400px;
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=style.css.map */
