@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav h1 {
+        font: 28px;
+    }
+
+    main .inputContainer {
+        width: 400px;
+        margin: 20px 0px;
+        padding: 10px 0px;
+    }
+
+    main .inputForm {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    main input {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid;
+        border-radius: 5px;
+    }
+    
+    main .Register {
+        width: 400px;
+        height: 50px;
+    }
+
+    main .RegisterBtn {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(138, 138, 230);
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 16px;
+    }
+</style>
+
+<body>
+    <nav><h1>Register Form</h1></nav>
+    <main>
+        <div class="inputContainer">
+            <div class="inputForm">
+                <div class="icon">icon</div>
+                <label for="Username"></label>
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="inputForm">
+                <div class="icon">icon</div>
+                <label for="Email"></label>
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputForm">
+                <div class="icon">icon</div>
+                <label for="Password"></label>
+                <input type="text" placeholder="Password">
+            </div>
+        </div>
+
+        <div class="Register">
+            <button class="RegisterBtn">Register</button>
+        </div>
+    </main>
+</body>
+</html>

@@ -57,6 +57,7 @@ a {
 
 .BR-padding {
   padding: 8px 16px;
+  margin-right: 16px;
 }
 
 .BR-right {
