@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script
+      src="https://kit.fontawesome.com/8849ef2a8c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- Video player -->
+    <section class="player">
+      <video
+        controls
+        src="video/video.mp4"
+        width="75%"
+        height="75%"
+      ></video>
+    </section>
+
+    <div class="infoAndUpNext">
+      
+      <!-- Video info -->
+      <section class="info">
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#DreamCoding</li>
+            <li>#DreamCoders</li>
+            <li>#Ellie</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">>Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라
+              만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+              드림코딩과 함께하는 프론트엔드 실전 입문편</span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <div class="views">1M views</div>
+        </div>
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="fas fa-thumbs-up"></i>
+              <span>1K</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-thumbs-down"></i>
+              <span>0</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-share"></i>
+              <span>Share</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fas fa-plus"></i>
+              <span>Save</span>
+            </button>
+          </li>
+          <li>
+            <button>
+              <i class="fab fa-font-awesome-flag"></i>
+              <span>Report</span>
+            </button>
+          </li>
+        </ul>
+        <div class="channel">
+          <div class="metadata">
+            <img src="image/profile.png" alt="profile" />
+            <div class="info">
+              <span class="name">thejsw</span>
+              <span class="subscribers">1K subscribers</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+  
+      <!-- UpNext -->
+      <section class="UpNext">
+        <span class="title">Up Next</span>
+        <ul>
+          <li class="item"></li>
+          <li class="item"></li>
+          <li class="item"></li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
