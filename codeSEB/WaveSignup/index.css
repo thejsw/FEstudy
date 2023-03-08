@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+    color: var(--gray-900);
+    background-color: var(--white);
+    font-size: 16px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white,
+      url('./images/codestates-motif.png');
+  }
+
+  main {
+    width: 1000px;
+    height: 680px;
+    border-radius: 20px;
+    background-color:  var(--blue200);
+    box-shadow: 0px 0px 15px rgb(207, 206, 206);
+    overflow: hidden;
+    position: relative;
+  }
+
+    .input-area {
+        float: right;
+        width: 55%;
+        height: 680px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        padding: 20px;
+        z-index: 999;
+        position: relative;
+    }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    border-radius: 80px;
+    border: 1px solid var(--gray-500);
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px 12px;
+  }
+
+  fieldset > label {
+    display: inline-block;
+    width: 112px;
+  }
+
+  main > div {
+    color: var(--peach-600);
+    font-size: 12px;
+    padding-left: 20px;
+  }
+
+  .logo {
+    width: 120px;
+    margin-bottom: 70px;
+  }
+
+  .success-message, .match-message {
+    color: var(--mint-700);
+  }
+
+  .failure-message, .mismatch-message {
+    color: rgb(252, 49, 49);
+  }
+
+  button {
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    width: 12rem;
+    height: 3rem;
+    color: var(--white);
+    background-color: var( --blue900);
+    font-size: 14px;
+    transition: all 0.3s;
+    margin-top: 60px;
+  }
+
+  a {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    text-decoration: none;
+  }
+
+  button:hover {
+    background-color: var(--blue500);
+  }
+
+  .input-label {
+    text-align: left;
+    padding-left: 15px;
+    color: var(--gray-800);
+  }
+
+  input {
+    border: none;
+    width: 17rem;
+    height: 26px;
+    font-size: 14px;
+  }
+
+  .input-age {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  input#userage {
+    width: 100px;
+  }
+
+  .input-age fieldset {
+    margin: 0;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  select#usermf {
+    width: 120px;
+    height: 40px;
+    border-radius: 80px;
+    padding: 8px;
+    color: var(--gray-700);
+    font-size: 14px;
+    border: 1px solid var(--gray-500);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .signup {
+    border: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #inputArea > fieldset {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  .valid-label {
+    margin-top: 5px;
+  }
+
+  /* wave */
+
+  html, body {
+    height: 100%;
+  }
+
+  .wave {
+    background: url(./images/wave.png) repeat-x;
+    top: 600px;
+    width: 6400px;
+    height: 1000px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+    position: absolute;
+    z-index: 1;
+    transition: top ease 1s;
+  }
+
+  .wave:nth-of-type(2) {
+    top: 550px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+  }
+
+  @keyframes wave {
+    0% {
+      margin-left: 0;
+    }
+    100% {
+      margin-left: -1600px;
+    }
+  }
+  @keyframes swell {
+    0%, 100% {
+      transform: translate3d(0, -25px, 0);
+    }
+    50% {
+      transform: translate3d(0, 5px, 0);
+    }
+  }

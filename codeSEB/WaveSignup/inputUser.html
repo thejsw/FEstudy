@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="global-style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+</head>
+<body>
+    <main>
+        <div id="wave1" class="wave"></div>
+        <div id="wave2" class="wave"></div>
+
+      <section id="inputArea" class="input-area">
+          <img
+            class="logo"
+            src="./images/Toss.png"
+            alt="CODE_STATES_LOGO"
+          />
+
+          <div class = "input-form">
+            <label class="input-label">이름</label>
+            <fieldset>
+                <input type="text" id="username" placeholder="이름" required/>
+            </fieldset>
+
+            <label class="input-label">주소</label>
+            <fieldset>
+                <input type="text" id="useraddress" placeholder="주소" required/>
+            </fieldset>
+
+            <div class="input-age">
+              <select id="usermf">
+                <option value="default">성별</option>
+                <option value="male">남성</option>
+                <option value="femal">여성</option>
+              </select>
+
+              <fieldset>
+                  <input type="text" id="userage" placeholder="나이" required/>
+              </fieldset>
+            </div>
+          </div>
+
+          <fieldset class="signup">
+            <button><a href="inputIDPW.html">다음으로 이동</a></button>
+          </fieldset>
+
+        </section>
+        <script src="./inputUser.js"></script>
+      </main>
+</body>
+</html>

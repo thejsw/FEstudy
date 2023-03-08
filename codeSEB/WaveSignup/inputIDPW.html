@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="global-style.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+</head>
+<body>
+    <main>
+      <div id="wave1" class="wave"></div>
+      <div id="wave2" class="wave"></div>
+
+      <section id="inputArea" class="input-area">
+        <img
+          class="logo"
+          src="./images/Toss.png"
+          alt="CODE_STATES_LOGO"
+        />
+
+          <fieldset>
+              <input type="text" id="userid" placeholder="아이디" required/>
+          </fieldset>
+
+          <div class="success-message hide valid-label">사용할 수 있는 아이디입니다</div>
+          <div class="failure-message hide valid-label">아이디는 네 글자 이상이어야 합니다</div>
+
+          <fieldset>
+            <input type="password" id="password" placeholder="비밀번호" />
+          </fieldset>
+
+          <fieldset>
+            <input
+              type="password"
+              id="password-retype"
+              placeholder="비밀번호 확인"
+            />
+          </fieldset>
+
+          <div class="match-message hide valid-label">비밀번호가 일치합니다</div>
+          <div class="mismatch-message hide valid-label">비밀번호가 일치하지 않습니다</div>
+
+          <fieldset class="signup">
+            <button>회원가입</button>
+          </fieldset>
+
+      </section>
+
+        <script src="inputIDPW.js"></script>
+      </main>
+</body>
+</html>
