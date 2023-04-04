@@ -26,7 +26,7 @@ function Twittler() {
   return (
     <div>
       <div>작성자: {currentUser}</div>
-      <NewTweetForm />
+      <NewTweetForm tweet={addNewTweet} />
       <ul id="tweets">
         {tweets.map((t) => (
           <SingleTweet key={t.uuid} writer={t.writer} date={t.date}>
@@ -38,7 +38,7 @@ function Twittler() {
   );
 }
 
-function NewTweetForm({ onButtonClick }) {
+function NewTweetForm(props) {
   const [newTweetContent, setNewTweetContent] = useState("");
 
   const onTextChange = (e) => {
@@ -52,7 +52,7 @@ function NewTweetForm({ onButtonClick }) {
       date: new Date().toISOString().substring(0, 10),
       content: newTweetContent
     };
-    // TDOO: 여기서 newTweet이 addNewTweet에 전달되어야 합니다.
+    props.tweet(newTweet); // TDOO: 여기서 newTweet이 addNewTweet에 전달되어야 합니다.
   };
 
   return (
@@ -74,5 +74,3 @@ function SingleTweet({ writer, date, children }) {
     </li>
   );
 }
-
-export default Twittler;
